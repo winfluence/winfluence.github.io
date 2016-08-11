@@ -39,9 +39,19 @@ function Draw4(){
 	/*Show only the Samsung Nokia chord*/
 	chords.transition().duration(2000)
 		.attr("opacity", function(d, i) { 
-			if(d.source.index == 5 && d.target.index == 4) `
+			if(d.source.index == 5 && d.target.index == 4) 
 				{return opacityValueBase;}
 			else {return 0;}
 		});
 	
 };/*Draw4*/
+
+
+
+
+
+
+
+
+
+

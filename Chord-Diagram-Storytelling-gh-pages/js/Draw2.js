@@ -1,5 +1,5 @@
 /*//////////////////////////////////////////////////////////	
-//Show Arc of Progress to no progress
+//Show Arc of Apple
 //////////////////////////////////////////////////////////*/
 function Draw2(){ 
 
@@ -9,7 +9,7 @@ function Draw2(){
 	/*Show and run the progressBar*/
 	runProgressBar(time=700*2);
 				
-	/*Initiate all arcs but only show the Porgress to no progress arc (d.index = 0)*/
+	/*Initiate all arcs but only show the Apple arc (d.index = 0)*/
 	g.append("svg:path")
 	  .style("stroke", function(d) { return fill(d.index); })
 	  .style("fill", function(d) { return fill(d.index); })
@@ -25,26 +25,27 @@ function Draw2(){
 		}
 	  });
 	  
-	/*Show the tick around the Progress to no progress arc*/
+	/*Show the tick around the Apple arc*/
 	d3.selectAll("g.group").selectAll("line")
 		.transition().delay(700).duration(1000)
 		.style("stroke", function(d, i, j) {return j ? 0 : "#000"; });
 
-	/*Add the labels for the %'s at Progress to no progress*/
+	/*Add the labels for the %'s at Apple*/
 	d3.selectAll("g.group").selectAll(".tickLabels")
 		.transition().delay(700).duration(2000)
 		.attr("opacity", function(d, i, j) {return j ? 0 : 1; });
 
-	/*Show the Progress to no progress name*/
+	/*Show the Apple name*/
 	d3.selectAll(".titles")
 	  .transition().duration(2000)
 	  .attr("opacity", function(d, i) {return d.index ? 0 : 1; });
 	  
 	/*Switch  text*/
-	changeTopText(newText = "According to the UN Haiti in 2011 Haiti's cases of cholera reduced 90% drastically but the number of deaths and cases drasticlly arose in 2014 due to late and heavy rains, weak water and sanitation inrastructures.  ",
+	changeTopText(newText = "According to the survey 19% owns an iPhone as their main phone",
 	loc = 1/2, delayDisappear = 0, delayAppear = 1, finalText = true);
 	
 	changeBottomText(newText = "",
 	loc = 0/2, delayDisappear = 0, delayAppear = 1)	;
 	
 };/*Draw2*/
+
