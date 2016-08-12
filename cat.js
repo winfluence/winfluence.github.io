@@ -1,9 +1,4 @@
-<html>
-<body>
-<script type="text/javascript">
-</script>
-</body>
-</html>
+
 
 var dict = []; // create an empty array
 var response;
