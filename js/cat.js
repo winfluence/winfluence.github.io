@@ -48,7 +48,7 @@ function buttonClicked() {
 	if (coolfactandpicture != "Not Found")
 		string = picture + "<div>"+coolfact+"</div>";
 	else
-		string = "<div>We haven't defined this brand yet</div>"
+		string = "<div>We haven't defined this brand yet!</div>"
 	$('.answer').html(string);	
 }
 
