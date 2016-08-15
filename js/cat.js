@@ -45,9 +45,11 @@ function buttonClicked() {
 	coolfactandpicture = checkDict();
 	picture = coolfactandpicture.picture;
 	coolfact = coolfactandpicture.coolfact;
-	string = picture + "<div>"+coolfact+"</div>";
-	
-	$('.answer').html(string);
+	if (coolfactandpicture != "Not Found")
+		string = picture + "<div>"+coolfact+"</div>";
+	else
+		string = "<div>We haven't defined this brand yet</div>"
+	$('.answer').html(string);	
 }
 
 function checkDict() {
