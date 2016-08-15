@@ -29,53 +29,31 @@
     <![endif]-->
 	
 	<style>
-	.state{
-		fill: none;
-		stroke: #a9a9a9;
-		stroke-width: 1;
-	}
-	.state:hover{
-		fill-opacity:0.5;
-	}
-	#tooltip {   
-		position: absolute;           
-		text-align: center;
-		padding: 20px;             
-		margin: 10px;
-		font: 12px sans-serif;        
-		background: lightsteelblue;   
-		border: 1px;      
-		border-radius: 2px;           
-		pointer-events: none;         
-	}
-	#tooltip h4{
-		margin:0;
-		font-size:14px;
-	}
-	#tooltip{
-		background:rgba(0,0,0,0.9);
-		border:1px solid grey;
-		border-radius:5px;
-		font-size:12px;
-		width:auto;
-		padding:4px;
-		color:white;
-		opacity:0;
-	}
-	#tooltip table{
-		table-layout:fixed;
-	}
-	#tooltip tr td{
-		padding:0;
-		margin:0;
-	}
-	#tooltip tr td:nth-child(1){
-		width:50px;
-	}
-	#tooltip tr td:nth-child(2){
-		text-align:center;
-	}
-	</style>
+	/* stylesheet for your custom graph */
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+.states-choropleth {
+  fill: #ccc;
+}
+#tooltip-container {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 1px solid;
+  display: none;
+}
+.tooltip_key {
+  font-weight: bold;
+}
+.tooltip_value {
+  margin-left: 20px;
+  float: right;
+}
+</style>
 
 </head>
 
@@ -139,96 +117,46 @@
                         <small>SUMMER AUGUST 2016</small>
                     </h2>
                     <p>Agriculture is the action of farming with soil and the use of growing crops to provide nutrients,wooland and various products. Agriculture holds an important role in the enviornment because it exposes sustainability,and renewable energy to the world around us.</p>
-                    <a href="bloginfo.html" class="btn btn-default btn-lg">Read More</a>
+                    <a href="http://www.cropsreview.com/what-is-agriculture.html" class="btn btn-default btn-lg">Read More</a>
 					
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
 
-<div id="tooltip"></div><!-- div to hold tooltip. -->
-<svg width="960" height="600" id="statesvg"></svg> <!-- svg to hold the map. -->
-<script src="uStates.js"></script> <!-- creates uStates. -->
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script>
 
-	function tooltipHtml(n, d){	/* function to create html content string in tooltip div. */
-		return "<h4>"+n+"</h4><table>"+
-			"<tr><td>Low</td><td>"+(d.low)+"</td></tr>"+
-			"<tr><td>Average</td><td>"+(d.avg)+"</td></tr>"+
-			"<tr><td>High</td><td>"+(d.high)+"</td></tr>"+
-			"</table>";
-	}
-	
-	var sampleData ={};	/* Sample random data. */	
-	["HI", "AK", "FL", "SC", "GA", "AL", "NC", "TN", "RI", "CT", "MA",
-	"ME", "NH", "VT", "NY", "NJ", "PA", "DE", "MD", "WV", "KY", "OH", 
-	"MI", "WY", "MT", "ID", "WA", "DC", "TX", "CA", "AZ", "NV", "UT", 
-	"CO", "NM", "OR", "ND", "SD", "NE", "IA", "MS", "IN", "IL", "MN", 
-	"WI", "MO", "AR", "OK", "KS", "LS", "VA"]
-		.forEach(function(d){ 
-			var low=Math.round(100*Math.random()), 
-				mid=Math.round(100*Math.random()), 
-				high=Math.round(100*Math.random());
-			sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]), 
-					avg:Math.round((low+mid+high)/3), color:d3.interpolate("#ffffcc", "#800026")(low/100)}; 
-		});
-	
-	/* draw states on id #statesvg */	
-	uStates.draw("#statesvg", sampleData, tooltipHtml);
-	
-	d3.select(self.frameElement).style("height", "600px"); 
+<script>
 </script>
 
 
-					<link rel="import" href="testmap.html">
+					<img class="http://www.takepart.com/sites/default/files/compost_6.jpg" src="http://pesticides.e-monsite.com/medias/album/images/Agriculture-pesticides.jpg" alt="">
                     <h2>Human affects on agriculture
                         <br>
-                        <small>October 13, 2015</small>
+                        <small>pesticides</small>
                     </h2>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
+                    <p> Agriculture is extremely helpful for humanity as a whole. However, the pesticides in which are sprayed on vegetables, fruits, and crops are benefical to help reduce pests and insects, but are extremely harmful to various insects to the extent which they will get killed.</p>
+                    <a href="http://www.encyclopedia.com/topic/Pesticides.aspx" class="btn btn-default btn-lg">Learn more about pesticides here!</a>
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
-                    <img class="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/Pictures/web/p/t/r/from_where_i_sit_illustration_031013.jpg?itok=F8rCLR1o.jpg" src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/Pictures/web/p/t/r/from_where_i_sit_illustration_031013.jpg?itok=F8rCLR1o.jpg" alt="">
+                    <img class="http://pesticides.e-monsite.com/medias/album/images/Agriculture-pesticides.jpg" src="https://www.geneticliteracyproject.org/wp-content/uploads/2015/05/IMG_55681-624x417.jpg" alt="">
                     <h2>What we can do to help 
                         <br>
                         <small>Let us pledge to make the enviornment a better place for everyone</small>
                     </h2>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
-                    <hr>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <ul class="pager">
-                        <li class="previous"><a href="#">&larr; Older</a>
-                        </li>
-                        <li class="next"><a href="#">Newer &rarr;</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-    <footer>
-        <div class="container">
+                    <p>As we may know, pestisides cannot be gone completely, however one step at at time can make a difference. To start, farmers should plant in a less invasive way, so that pestisides and insects do not depend on plants that the farmers grow.</p>
+                    <a href="http://petitions.moveon.org/sign/ban-systemic-pesticide" class="btn btn-default btn-lg">Sign the petition to ban the use of pesticides<strong> TODAY!</strong></a>
+                  <hr>
+    </div 
+				<div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <ul class="pager">
+                         <li class="next"><a href="foodwatse
+.html">Newer &rarr;</a>
+                        </li>
+                   
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
