@@ -6,7 +6,7 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('https://www.solidbackgrounds.com/images/2560x1440/2560x1440-pale-pink-solid-color-background.jpg') no-repeat center center fixed;
+    background: url('http://www.solidbackgrounds.com/images/2560x1440/2560x1440-pale-pink-solid-color-background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -134,11 +134,6 @@ hr {
     float: none;
     margin: 0 auto 0;
     border: #999999 solid 1px;
-}
-
-.img-left {
-    float: none;
-    margin: 0 auto 0;
 }
 
 footer {
