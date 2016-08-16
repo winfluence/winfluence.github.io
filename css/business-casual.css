@@ -40,9 +40,9 @@ body {
     z-index: 250;
 }
 .col-lg-12 {
-	padding-top: 20px;
+	padding-top: 10px;
     padding-right: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-left: 30px;
 }
 .dropdown-content a {
