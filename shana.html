@@ -31,17 +31,14 @@
     <![endif]-->
 
 	
-          <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
-		  <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
-		  <script src="https://api.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.js"></script>
-		  <link href="https://api.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.css" rel="stylesheet"/>
-		  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.js"></script>
-		  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.css" rel="stylesheet"/>
-		  <script src="addFeaures.js"></script>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+	
+
+		 
 		  
-	<style>
-		#map{position:absolute; width:100%; height:500px;}
-	</style>
+		  
           
           
         
@@ -53,7 +50,7 @@
 
 
     <!-- Navigation -->
-       <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mole display -->
             <div class="navbar-header">
@@ -76,22 +73,17 @@
                         <a href="about.html">About</a>
                     </li>
                     <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
                         <a href="contact.html">Contact</a>
                     </li>
-					
-  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="Topics.html">Topics </a>
-  <div class="dropdown-content">
-    <a href="cat.html">Fashion</a>
-    <a href="shana.html">Enivornment</a>
-    <a href="foodwatse.html">Food</a>
-	<a href="blog2.html">Health</a>
-  </div>
-  </li>
-</ul>
-</div>
-
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
-
 
     <div class="container">
 
@@ -104,44 +96,8 @@
                     </h2>
                     <hr>
                 </div>
-
-          
-				<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/shanabernstein.13fpji6n/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1Ijoic2hhbmFiZXJuc3RlaW4iLCJhIjoiY2lycDhvZ2VyMGVwMGZhbThub2Y5MnVoZiJ9.hu6uT3LggoZKmOJJMckFDA'></iframe>
-				
-        
-				<div id="map"></div>
-				
-				<script>
-
-				mapboxgl.accessToken = 'pk.eyJ1Ijoic2hhbmFiZXJuc3RlaW4iLCJhIjoiY2lycDhvZ2VyMGVwMGZhbThub2Y5MnVoZiJ9.hu6uT3LggoZKmOJJMckFDA';
-				
-				
-				});
-				
-				
-				map.on('load', function () {
-					map.addSource("points", {
-						"type": "geojson",
-						"data": {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"id":"marker-irqogfouu","title":"Sweden","description":"Timber harvesting for pulp production threatens more than 2000 animal and plant species. ","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1421.367187,65.658274],"type":"Point"},"id":"0a43e3c154a3fabd17fe19b88c0149e2"},{"type":"Feature","properties":{"id":"marker-irqodjnbq","title":"Afganistan","description":"Loss of natural vegetation results in soil erosion causing sandstorms to submerge as many as 125 villages by 2016.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1377.773437,45.828799],"type":"Point"},"id":"10c3b14b7503600fb8ec173c927be6f2"},{"type":"Feature","properties":{"id":"marker-irqo2qvwj","title":"Russia","description":" 75% of surface water and 50% of all water in Russia is now polluted.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1340.625003,66.652977],"type":"Point"},"id":"122f7e2d69ce575019ba0c6db89dfd99"},{"type":"Feature","properties":{"id":"marker-irqnqooi9","title":"Argentina","description":"16,288,000  of Argentina’s forest cover have been lost between 1980 and 2000. ","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1503.632823,-35.365159],"type":"Point"},"id":"197a310730b5a1de4d544880f866364d"},{"type":"Feature","properties":{"id":"marker-irqp5q5z11","title":"Mexico","description":"6,400 people die each year due to air pollution","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1545.46875,26.74561],"type":"Point"},"id":"1d76de63aab64e182004c36e5325f859"},{"type":"Feature","properties":{"id":"marker-irqpmky412","title":"Atlantic Ocean","description":"Nearly half of all ocean pollution comes from activities that take place on land, like sewage, industrial and agricultural runoff, garbage dumping, and chemical spills.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1475.683593,45.706179],"type":"Point"},"id":"259f3bbe23740b162410bf65145ebb5a"},{"type":"Feature","properties":{"id":"marker-irqnaspu1","title":"India","description":"Almost 80% of urban waste is dumped in to River Ganges","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1363.359374,23.456514],"type":"Point"},"id":"2689c5b85dd8999190bf9422c0716b9a"},{"type":"Feature","properties":{"id":"marker-irqpnnr013","title":"Pacific Ocean","description":"Over one million seabirds are killed by ocean pollution each year. Three hundred thousand dolphins and porpoises die each year as a result of becoming entangled in discarded fishing nets, among other items. One hundred thousand sea mammals are killed in the ocean by pollution each year.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1601.71875,42.032974],"type":"Point"},"id":"2f4bc5c824e4a573444c7864fff3f0c2"},{"type":"Feature","properties":{"id":"marker-irqntbhvc","title":"Venezuela","description":"This nation has a 2.1 deforestation rate due to human activities.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1505.390625,9.449061],"type":"Point"},"id":"30dc88e36e18dd328322184106bdfce1"},{"type":"Feature","properties":{"id":"marker-irqoltvbz","title":"Alaska","description":"Thousands of cargo ships in the Asia trade pass through, braving  the region’s hurricane-force winds, creating the risk of catastrophic spills.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1592.578125,67.60922],"type":"Point"},"id":"31db6676bd2bd5249d01f8e0cb394b28"},{"type":"Feature","properties":{"id":"marker-irqo36gnk","title":"Mongolia","description":"Mongolias mining boom will lead to erosion, formation of sinkholes, loss of biodiversity, and contamination of soil, groundwater and surface water by chemicals from mining processes.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1337.812503,47.989921],"type":"Point"},"id":"3d660688192169b8c48588bca8c68c5b"},{"type":"Feature","properties":{"id":"marker-irqoh5pkv","title":"Poland","description":"As of the mid-1990s, 75% of Poland's forests have been damaged by airborne contaminants and acid rain.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1401.328125,57.136239],"type":"Point"},"id":"49918ec640c146d53f4be30cd59ab419"},{"type":"Feature","properties":{"id":"marker-irqpolmg14","title":"Indian Ocean","description":" 36% of damages to the Indian ocean comes from drains and rivers as waste and runoff from cities and industry between South America and Africa.\n","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1458.984375,-5.615985],"type":"Point"},"id":"4d62751a2803d05f4a02ccd1cd4f579d"},{"type":"Feature","properties":{"id":"marker-irqnsyetb","title":"Peru","description":"In 2001, 46 of the nation's mammal species and 64 of its bird species were endangered. About 653 of its plant species were also endangered due to over exportation of natural resources.\n","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1517.34375,-7.362466],"type":"Point"},"id":"5127d170fe4f9652f41c05b0e179cdfb"},{"type":"Feature","properties":{"id":"marker-irqnlnvn7","title":"Vancouver","description":"Privatevehicles account for 18 per cent of smog-forming emissions and 31 per cent of greenhouse gas emissions within the Metro Vancouver region.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1568.320312,54.162433],"type":"Point"},"id":"6a2664170e6bfabf543c2c88a7534c44"},{"type":"Feature","properties":{"id":"marker-irqo9zn6l","title":"China","description":"Worlds largest producer of carbon dioxide","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1329.140621,27.683532],"type":"Point"},"id":"6eb303613cea717b3f322f498531d403"},{"type":"Feature","properties":{"id":"marker-irqok558x","title":"Australia","description":"In 2015, 58 species of mammals, 45 species of birds, and 1,871 species of plants were threatened.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1309.218749,-20.961439],"type":"Point"},"id":"6ed904b1418390fddbf832cd1f753f1a"},{"type":"Feature","properties":{"id":"marker-irqnvk31e","title":"Egypt","description":"Noise polluton levels in Egypt's capital (Cairo) reach an average of 90 decibels (dB) and never drop below 70 dB.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1410.585941,27.059125],"type":"Point"},"id":"70307a827f464211e9edd95d8b040b3b"},{"type":"Feature","properties":{"id":"marker-irqncfja2","title":"California","description":"entering its fifth year of state wide drought","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1562.34375,39.639529],"type":"Point"},"id":"7372c3736409a47867b774b94396caf3"},{"type":"Feature","properties":{"id":"marker-irqnxqz6h","title":"Algeria","description":"The Mediterranean Sea has also been contaminated by the oil industry, fertilizer runoff, and soil erosion.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1438.007816,31.952162],"type":"Point"},"id":"791d67eab8a4728a4b39b7a2b24957c9"},{"type":"Feature","properties":{"id":"marker-irqndrl83","title":"New York","description":" In New York City, 10% of all children have a current diagnosis of asthma due to air pollution.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1515.058593,43.389081],"type":"Point"},"id":"85c799777d5e7123bfa217d206c0676e"},{"type":"Feature","properties":{"id":"marker-irqofbvir","title":"England","description":"The Great Smog disaster (1952) caused approximately 4,000 people to die from air pollution.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1441.40625,52.908902],"type":"Point"},"id":"9c7658f93fe0cac7644e2d7a96a9a52b"},{"type":"Feature","properties":{"id":"marker-irqnlaa76","title":"Texas","description":"Mercury levels are so high that fish and shellfish are heavily contaminated, due to water pullution.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1540.898437,33.431441],"type":"Point"},"id":"a1acc9581baa7b82d6fd2b7e1b6818d4"},{"type":"Feature","properties":{"id":"marker-irqojtncw","title":"Russia","description":"68% of Russia's energy is produced by polluting fossil fuels, and it is a large producer of those fuels","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1290.585937,65.802775],"type":"Point"},"id":"a6b50bb3f5f6b4c9be2ce1f3258fcabb"},{"type":"Feature","properties":{"id":"marker-irqnnutk8","title":"Toronto","description":"contains more than 11.3 micro-grams/cubic meter of air pollutants ","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1511.015625,54.162433],"type":"Point"},"id":"b0d8a22f5296f7878f547801fdf8c2ec"},{"type":"Feature","properties":{"id":"marker-irqog18rt","title":"Geramany","description":"Over 50% of Germany's forests had been damaged by acid rain.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1418.90625,52.48278],"type":"Point"},"id":"b38bf0245aed5c5ab8bb03ec64b29fb4"},{"type":"Feature","properties":{"id":"marker-irqobj2qo","title":"Iran","description":"80% of air pollution in Tehran is due to cars, the remaining 20% is due to factories and industry emissions.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1382.695312,29.840643],"type":"Point"},"id":"c2650223d1b445eb98cb6236c3b138a5"},{"type":"Feature","properties":{"id":"marker-irqnymn7i","title":"Mali","description":" Mali’s population consumes 6 million tons of wood per year for timber and fuel, causing 4,000 square kilometres of tree cover to be lost annually. This  ensures the destruction of the country’s savanna woodlands.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1445.039066,20.632784],"type":"Point"},"id":"dfbbf22417fa067182d83fa5fd745d71"},{"type":"Feature","properties":{"id":"marker-irqnslpra","title":"Brazil","description":" The Amazon rainforest forest lost over 760,000 sq km by 2014 dues to deforestation. ","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1489.570312,-6.315298],"type":"Point"},"id":"e267a05fdbdf568a46b998cfd72c67e9"},{"type":"Feature","properties":{"id":"marker-irqod4klp","title":"Israel","description":"90% of the solid waste generated in the country is buried in primitive landfills which takes abnormally long periods of time to decompose.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1401.328125,38.548165],"type":"Point"},"id":"e55dd182834478fd5c2d5ee70243234b"},{"type":"Feature","properties":{"id":"marker-irqnkyy05","title":"Florida","description":"Florida Keys's coral reefs have declined 44% 1996=2004, due to boating","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1521.914062,27.994401],"type":"Point"},"id":"ea7734e2cdddd90e1013876370957327"},{"type":"Feature","properties":{"id":"marker-irqol88ey","title":"Greenland","description":"Due to the retracting of fossil fuels, Greenland's ice caps are quickly melting, causing sea levels to rise dramatically. ","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1493.4375,77.767582],"type":"Point"},"id":"ebb9b86eaf234e478fc186b6f338975e"},{"type":"Feature","properties":{"id":"marker-irqob5j3n","title":"Singapore","description":"seasonal smoke from neighboring islands brings immence amounts of haze to environment ","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1339.101562,0.35156],"type":"Point"},"id":"efa71a814e837649fdbd51a659cd4c2e"},{"type":"Feature","properties":{"id":"marker-irqoahbvm","title":"Philippines","description":"Over the course of the 20th century the forest cover of the Philippines dropped from 70% down to 20%.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1318.007812,13.239945],"type":"Point"},"id":"f1b961ddc3c9c673cb41abe63b57a76d"},{"type":"Feature","properties":{"id":"marker-irqnws7if","title":"Kenya","description":"The damming of the Omo river by the Gilgel Gibe III Dam together with the plan to use 30% to 50% of the water for sugar plantations will cause up to 50% of the water capacity of Lake Turkana to be lost.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1402.851566,-0.35156],"type":"Point"},"id":"f9432fb7fd59d1dcde660f92c02cf79b"},{"type":"Feature","properties":{"id":"marker-irqnxb6cg","title":"Chad","description":"Safe drinking water is available to 31% of urban dwellers and 26% of the rural population.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1422.539066,14.264383],"type":"Point"},"id":"faf98c69df941fd20b79d634fdba2609"},{"type":"Feature","properties":{"id":"marker-irqofnm5s","title":"Italy","description":"Italy's cities produce more than 19.1 million tons of solid waste per year.","marker-size":"large","marker-color":"#f86767","marker-symbol":"embassy"},"geometry":{"coordinates":[-1428.398437,45.089035],"type":"Point"},"id":"ff145f8c26ff9d84fb6e6cdd8e07b3eb"}],"id":"shanabernstein.13fpji6n"}
-    });
-
-    map.addLayer({
-        "id": "points",
-        "type": "symbol",
-        "source": "points",
-        "layout": {
-            "icon-image": "{icon}-15",
-            "text-field": "{title}",
-            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-            "text-offset": [0, 0.6],
-            "text-anchor": "top"
-        }
-    });
-});
-
-</script>
-
-
+				<div id='map' style='width: 100%; height: 395px;'></div>
+				<script src='js/map.js'></script>
                 <div class="col-lg-12 text-center">
           
                     <h2>Environmental state of major countries 
@@ -180,7 +136,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Your Website 2016</p>
                 </div>
             </div>
         </div>
