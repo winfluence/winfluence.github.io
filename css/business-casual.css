@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
+
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background: url('http://www.solidbackgrounds.com/images/2560x1440/2560x1440-pale-pink-solid-color-background.jpg') no-repeat center center fixed;
@@ -22,8 +24,9 @@ body {
     cursor: pointer;
 }
 .dotted {
-	border: dotted black 3px;
-	width: 90%;
+	border-bottom: dotted black 3px 80%;
+	width: 98%;
+	
 
 }
 /* entire container, keeps perspective */
@@ -37,7 +40,7 @@ body {
 
 .flip-container, .front, .back {
 	width: 320px;
-	height: 480px;
+	height: 360px;
 }
 
 /* flip speed goes here */
