@@ -354,7 +354,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Toronto',
-            description: 'Toronto contains more than 11.3 micrograms/cubic meter of air pollutants.',
+            description: 'Toronto contains more than 11.3 micrograms/cubic meters of air pollutants.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
