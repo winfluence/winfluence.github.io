@@ -492,7 +492,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Kenya',
-            description: 'The damming of the Omo river by the Gilgel Gibe III Dam together with the plan to use 30% to 50% of the water for sugar plantations will cause up to 50% of the water capacity of Lake Turkana to be lost.',
+            description: 'The damming of the Omo river by the "Gilgel Gibe III Dam" together with the plan to use 30% to 50% of the water for sugar plantations will cause up to 50% of the water capacity of Lake Turkana to be lost.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
