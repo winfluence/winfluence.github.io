@@ -464,7 +464,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Singapore',
-            description: 'Seasonal smoke from neighboring islands brings immense amounts of haze to environment. Haze is a major contributor to lung cancer.',
+            description: 'Seasonal smoke from neighboring islands brings immense amounts of haze to the environment. Haze is a major contributor to lung cancer.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
