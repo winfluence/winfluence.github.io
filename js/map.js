@@ -186,7 +186,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Indian Ocean',
-            description: '36% of damages to the Indian ocean comes from drains and rivers as waste and runoff from cities and industry between South America and Africa.',
+            description: '36% of damage to the Indian Ocean comes from drains and rivers as waste and runoff from cities and industry between South America and Africa.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
