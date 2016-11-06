@@ -298,7 +298,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'New York',
-            description: '10% of all children in New York City have a current diagnosis of asthma due to air pollution.',
+            description: '10% of all children in New York City have a diagnosis of asthma due to air pollution.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
