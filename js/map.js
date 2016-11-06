@@ -437,7 +437,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Florida',
-            description: 'Florida Keys coral reefs have declined 44% 1996-2004, due to boating.',
+            description: 'Florida Keys coral reefs have declined 44%, 1996-2004, due to boating.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
