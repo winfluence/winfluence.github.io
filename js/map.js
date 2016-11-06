@@ -396,7 +396,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Mali',
-            description: 'Mali population consumes 6 million tons of wood per year for timber and fuel, causing 4,000 square kilometers of tree cover to be lost annually. This  ensures the destruction of all the savanna woodlands.',
+            description: 'The Mali population consumes 6 million tons of wood per year for timber and fuel, causing 4,000 square kilometers of tree cover to be lost annually. This  ensures the destruction of all the savanna woodlands.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
