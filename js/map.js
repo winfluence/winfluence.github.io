@@ -284,7 +284,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Algeria',
-            description: 'The Mediterranean Sea has also been contaminated by the oil industry, fertilizer runoff, and soil erosion.',
+            description: 'The Mediterranean Sea which boarders Algeria has been contaminated by the oil industry, fertilizer runoff, and soil erosion.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
