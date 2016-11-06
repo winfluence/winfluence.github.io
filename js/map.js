@@ -101,7 +101,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'India',
-            description: 'Approximately 80% of urban waste is dumped into River Ganges.',
+            description: 'Approximately 80% of urban waste is dumped into the River Ganges.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
