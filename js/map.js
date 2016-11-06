@@ -368,7 +368,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Germany',
-            description: 'Over 50% of German forests had been damaged by acid rain.',
+            description: 'Over 50% of German forests have been damaged by acid rain.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
