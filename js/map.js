@@ -478,7 +478,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Philippines',
-            description: 'Over the course of the 20th century the forest cover of the Philippines dropped from 70% to 20%.',
+            description: 'Over the course of the 20th century, the forest cover of the Philippines dropped from 70% to 20%.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
