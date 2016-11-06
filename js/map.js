@@ -130,7 +130,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Venezuela',
-            description: 'Venezuela has a 2.1 deforestation rate due to human activities.',
+            description: 'Venezuela has a 2.1% deforestation rate due to human activities.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
