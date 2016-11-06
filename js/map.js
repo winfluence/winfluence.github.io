@@ -15,7 +15,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Sweden',
-            description: 'Timber harvesting for pulp production threatens more than 2,000 animal and plant species',
+            description: 'Timber harvesting for pulp production threatens more than 2,000 animal and plant species.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
