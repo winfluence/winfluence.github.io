@@ -423,7 +423,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Israel',
-            description: '90% of the solid waste generated is buried in primitive landfills which takes abnormally long periods of time to decompose.',
+            description: '90% of the solid waste generated, is buried in primitive landfills which takes abnormally long periods of time to decompose.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
