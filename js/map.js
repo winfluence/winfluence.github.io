@@ -326,7 +326,7 @@ var geojson = {
         type: 'Feature',
         properties: {
             title: 'Texas',
-            description: 'Water pollution had caused mercury levels to to dangerous levels, resulting in the contamination of many fish we consume.',
+            description: 'Water pollution has caused mercury levels to reach dangerous levels, resulting in the contamination of many fish we consume.',
             'marker-color': '#f86767',
             'marker-size': 'large',
             'marker-symbol': 'embassy',
